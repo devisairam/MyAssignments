@@ -6,9 +6,8 @@ test("Validate the behavior of radiobutton", async({page})=>
     await expect(page.locator('//input[@value="Option3"]')).toBeChecked()
     await page.locator('(//label[text()="Chrome"])[1]').click()
     await expect(page.locator('(//label[text()="Chrome"])[1]')).toBeEditable()
-    await page.locator('//label[text()="Chennai"]').click()
-    // await page.locator('//label[text()="1-20 Years"]').click()
-    await expect(page.locator('//label[text()="21-40 Years"]')).toBeChecked()
+    await page.locator('//label[text()="Chennai"]').click()   
+    await expect(page.locator('//label[text()="21-40 Years"]')).toBeChecked()    
     await page.waitForTimeout(3000)
 
 })

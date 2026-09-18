@@ -26,8 +26,6 @@ test("Verify the dropdown functionality", async({page})=>
     await page.locator('//li[text()="Appium"]').click()
     await page.locator('//li[text()="Playwright"]').click()
     
-
-
     await page.locator('//label[text()="Select Language"]').click()
     
     let langDropdownValues=page.locator('(//div[@class="ui-selectonemenu-items-wrapper"])//li')
